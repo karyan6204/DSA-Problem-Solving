@@ -1,3 +1,5 @@
+// Problem Link --> https://www.codingninjas.com/studio/problems/ninja-and-the-sorted-check_6581957?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+
 #include <bits/stdc++.h> 
 using namespace std;
 
