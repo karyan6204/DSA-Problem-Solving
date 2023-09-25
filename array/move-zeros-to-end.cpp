@@ -1,4 +1,4 @@
-// Problem Link --> 
+// Problem Link --> https://www.codingninjas.com/studio/problems/ninja-and-the-zero-s_6581958?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0
 
 #include <bits/stdc++.h> 
 using namespace std;
@@ -21,7 +21,7 @@ int main(){
     for(int i=0; i<n; i++){
         cin>>arr[i];
     }
-    vector<int> ans = moveZeros(arr, n);
+    vector<int> ans = moveZeros(n, arr);
     for(int i=0; i<n; i++){
         cout<<ans[i]<<" ";
     }
