@@ -20,12 +20,14 @@ vector<int> sortedArray(vector<int> a, vector<int> b) {
             j++;
         }
     }
+    // if any element left in the first array
     while(i<a.size()){
         if(ans.back()!=a[i]){
             ans.push_back(a[i]);
         }
         i++;
     }
+    // if any element left in the second array
     while(j<b.size()){
         if(ans.back()!=b[j]){
             ans.push_back(b[j]);
