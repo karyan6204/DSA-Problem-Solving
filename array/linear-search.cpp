@@ -1,4 +1,4 @@
-// Problem Link --> 
+// Problem Link --> https://www.codingninjas.com/studio/problems/linear-search_6922070?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0
 
 #include<bits/stdc++.h>
 using namespace std;
