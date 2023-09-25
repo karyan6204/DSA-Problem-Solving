@@ -1,4 +1,4 @@
-// Problem Link --> https://www.codingninjas.com/studio/problems/left-rotate-an-array-by-one_5026278?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0
+// Problem Link --> https://www.codingninjas.com/studio/problems/left-rotate-an-array-by-one_5026278
 
 #include <bits/stdc++.h> 
 using namespace std;
