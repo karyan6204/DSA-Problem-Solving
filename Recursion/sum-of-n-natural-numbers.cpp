@@ -1,4 +1,4 @@
-// Problem Link --> 
+// Problem Link --> https://www.codingninjas.com/studio/problems/sum-of-first-n-numbers_8876068
 #include<bits/stdc++.h>
 using namespace std;
 
