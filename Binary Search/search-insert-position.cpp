@@ -3,16 +3,17 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int lowerBound(vector<int> arr, int n, int x) {
-	// Write your code here
-	int low = 0, high = n-1, ans = n;
+int searchInsert(vector<int>& arr, int m)
+{
+	// Write your code here.
+	int low = 0, high = arr.size()-1, ans = arr.size();
 	while(low<=high){
 		int mid = low+(high-low)/2;
-		if(arr[mid]>=x){
+		if(arr[mid] >= m){
 			ans = mid;
-			high = mid-1;
+			high = mid - 1;
 		}else{
-			low = mid+1;
+			low = mid + 1;
 		}
 	}
 	return ans;
@@ -20,7 +21,7 @@ int lowerBound(vector<int> arr, int n, int x) {
 
 int main(){
     vector<int> arr = {1, 2, 2, 3, 3, 5};
-    int ans = lowerBound(arr, 6, 2);
+    int ans = searchInsert(arr, 4);
     cout<<"The lower bound is at index: "<<ans<<" (0-based)"<<endl;
     return 0;
 }
