@@ -1,13 +1,14 @@
-// Problem Link --> https://www.codingninjas.com/studio/problems/implement-upper-bound_8165383
+// Problem Link --> https://www.codingninjas.com/studio/problems/algorithm-to-find-best-insert-position-in-sorted-array_839813
+
 #include<bits/stdc++.h>
 using namespace std;
 
-int upperBound(vector<int> &arr, int x, int n){
-	// Write your code here.	
+int lowerBound(vector<int> arr, int n, int x) {
+	// Write your code here
 	int low = 0, high = n-1, ans = n;
 	while(low<=high){
 		int mid = low+(high-low)/2;
-		if(arr[mid]>x){
+		if(arr[mid]>=x){
 			ans = mid;
 			high = mid-1;
 		}else{
@@ -19,7 +20,7 @@ int upperBound(vector<int> &arr, int x, int n){
 
 int main(){
     vector<int> arr = {1, 2, 2, 3, 3, 5};
-    int ans = upperBound(arr, 6, 2);
+    int ans = lowerBound(arr, 6, 2);
     cout<<"The lower bound is at index: "<<ans<<" (0-based)"<<endl;
     return 0;
 }
